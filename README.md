@@ -117,8 +117,6 @@ Now the train dataset has 1999 images which can not be fed in one go. I use <a h
 
 
 * ### 5. Defining model
-The model architecture is shown in the picture below
-![](Model_arch.png)
 
 It has a encoding path and a decoding path. The architecture is difficult to code in one <tt>class UNet(nn.Module</tt>. So I define some classes before hand which can help to make our code concise and simple to read
 
@@ -131,30 +129,11 @@ For this problem we will be defining the <tt>DiceLoss</tt>. As there is not pre 
 * ### 7. Performing Forward Propagation
 I perform forward propagation for 30 epochs and print losses. Based on the trend of losses, I have occationally interrupted execution and reduced learning rate
 
-
-
 * ### 8. Visualizing train loss
-![](train_losses.png)
-
 
 * ### 9. Visualizing predictions
-
-
-
-![](images/label1.png)
-![](images/pred1.png)
-
-
-![](images/label2.png)
-![](images/pred2.png)
-
-![](images/label3.png)
-![](images/pred3.png)
  
- <br>
-
 These are predictions on train set, We'll see predictions on test sets in conclusion part
-
 
 
 ## How to replicate on your device
